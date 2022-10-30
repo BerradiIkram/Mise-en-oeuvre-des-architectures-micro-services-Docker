@@ -62,61 +62,24 @@ Mise en oeuvre d'une application distribuée basée sur deux micro-services:
 ##  Créer les fichiers Docker
 
 ![image](https://user-images.githubusercontent.com/86124754/198904426-80d2b21d-d1c8-4e72-a587-f6a0aa916a00.png)
+![image](https://user-images.githubusercontent.com/86124754/198904674-7e28df37-f608-4326-9cca-b368a25210cb.png)
+
 
 ##  Création de fichier docker-compose.yml 
-version: '3'
-services:
-  eurika-service:
-    build: EurikaService/
-    hostname: eurika-service
-    ports:
-      - "8761:8761"
-    networks:
-      - default-network
 
-  openlab-customer-service:
-    build: CustomerService/
-    hostname: openlab-customer-service
-    ports:
-      - "8081:8081"
-    depends_on:
-      - eurika-service
-    environment:
-      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
-    networks:
-      - default-network
+![image](https://user-images.githubusercontent.com/86124754/198904775-b4abdc24-2fb0-492d-9840-4f2f5647c463.png)
 
-  enset-billing-service:
-    build: BillingService/
-    hostname: enset-billing-service
-    ports:
-      - "8083:8083"
-    restart: on-failure
-    depends_on:
-      - openlab-customer-service
-      - eurika-service
-    environment:
-      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
-    networks:
-      - default-network
+![image](https://user-images.githubusercontent.com/86124754/198904806-7c3cc1a7-41e4-49ae-ad70-4aba1c90a7d8.png)
 
-  gateway:
-    build: GatewayService/
-    hostname: gateway
-    ports:
-      - "9999:9999"
-    depends_on:
-      - openlab-customer-service
-      - enset-billing-service
-      - eurika-service
-    environment:
-      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
-    networks:
-      - default-network
+## Création des images
 
-networks:
-  default-network:
-    driver: bridge
+![image](https://user-images.githubusercontent.com/86124754/198904877-c3871a17-17d3-4071-9238-9b3ea23b3a5f.png)
+
+## Création des  containers 
+
+![image](https://user-images.githubusercontent.com/86124754/198904950-41b0cda1-31d6-4778-bed6-2524fbf838cd.png)
+
+
 
 
 

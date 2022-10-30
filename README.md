@@ -54,6 +54,9 @@ Mise en oeuvre d'une application distribuée basée sur deux micro-services:
 
 ![image](https://user-images.githubusercontent.com/86124754/198903422-4acb2967-d846-44c7-bdcd-c4b9a0950603.png)
 
+![image](https://user-images.githubusercontent.com/86124754/198903611-812d7651-4070-4f0b-9531-76b2a588214e.png)
+
+
 
 
 

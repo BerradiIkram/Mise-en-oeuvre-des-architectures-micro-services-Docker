@@ -1,4 +1,4 @@
-# Mise-en-oeuvre-des-architectures-micro-services-Docker
+# Mise-en-oeuvre-des-architectures-micro-services-Docker:
 # Présentation du projet :
 Mise en oeuvre d'une application distribuée basée sur deux micro-services:
   - Couches DA0, Service, Web, DTO
@@ -54,28 +54,29 @@ Mise en oeuvre d'une application distribuée basée sur deux micro-services:
 
 ![image](https://user-images.githubusercontent.com/86124754/198903422-4acb2967-d846-44c7-bdcd-c4b9a0950603.png)
 
-# Utiliser docker-compose
-## Extraire Les fichiers jar
+# Utiliser docker-compose:
+
+## Extraire Les fichiers jar:
 
 ![image](https://user-images.githubusercontent.com/86124754/198904334-1620dae8-fbc9-4c28-861d-c6ba068a8e60.png)
  
-##  Créer les fichiers Docker
+##  Créer les fichiers Docker:
 
 ![image](https://user-images.githubusercontent.com/86124754/198904426-80d2b21d-d1c8-4e72-a587-f6a0aa916a00.png)
 ![image](https://user-images.githubusercontent.com/86124754/198904674-7e28df37-f608-4326-9cca-b368a25210cb.png)
 
 
-##  Création de fichier docker-compose.yml 
+##  Création de fichier docker-compose.yml:
 
 ![image](https://user-images.githubusercontent.com/86124754/198904775-b4abdc24-2fb0-492d-9840-4f2f5647c463.png)
 
 ![image](https://user-images.githubusercontent.com/86124754/198904806-7c3cc1a7-41e4-49ae-ad70-4aba1c90a7d8.png)
 
-## Création des images
+## Création des images:
 
 ![image](https://user-images.githubusercontent.com/86124754/198904877-c3871a17-17d3-4071-9238-9b3ea23b3a5f.png)
 
-## Création des  containers 
+## Création des  containers:
 
 ![image](https://user-images.githubusercontent.com/86124754/198904950-41b0cda1-31d6-4778-bed6-2524fbf838cd.png)
 
